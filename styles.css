@@ -1,6 +1,164 @@
 styles.css
+/* Main body */
 
+	
 body	{
-	background-color: #d6d6c2;
-	font-family: courier;
+	background-image: url(/img/Achtergrond.jpg);
+}
+
+
+
+/* Links*/
+
+	
+a:link 	{
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover	{
+	color: black;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+.centertext {
+	text-align: center;
+}
+
+.title	{
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* Navigation bar*/
+
+.Menu 	{
+	background-color: #333333;
+	color: white;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.Menu li {
+	float: left;
+}
+	
+
+
+.Menu a {
+	color: white;
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+/* Whole page */
+
+#Page {
+	background-color: #f9d08e;
+	width: 1000px;
+	margin: 0px auto;
+	margin-top: 20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.Divider {
+	border-top: 2px;
+	border-bottom: 2px;
+	border-color: black;
+	text-align: center;
+}
+
+/* Sudoku */
+
+.sudoku {
+    width: 500px;
+    height: 500px;
+
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 10%;
+   /* position: absolute; */
+    display: block;
+    background-color: white;
+}
+#grid {
+    width: 378px;
+    height: 390px;
+
+    margin-left: 20px;
+    margin-top: 50px;
+
+    border: 3px solid #000000;
+}
+
+
+.sudoku_game {
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	height: 100%;
+	width: 100%;
+	table-layout: fixed;
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 30px;
+}
+.sudoku_cell {
+	width: 11%;
+	height: 11%;
+	cursor: pointer;
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid black;
+}
+
+.r {
+	border-right: solid 2px black;
+}
+
+
+
+
+.b {
+	border-bottom: solid 2px black;
+}
+	
+	
+#oplossen {
+	text-align:center;
+	
+}
+
+input:hover {
+	cursor:pointer;
+}
+.cellInput {
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	font-size: 30px;
+	maxlength: 1;
+	&:focus {
+        outline: none;
+    }
+	border: none;
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+    text-align: center;
+	
+}
+
+.buttonClick {
+	font-size: 20px;
 }
