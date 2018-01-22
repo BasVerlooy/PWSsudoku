@@ -22,6 +22,9 @@ function oplossenSudoku1() {
 	var A = [];
 	for (i = 1; i < 10; i++){
 		ai = document.getElementById("A" + i).value;
+		if (ai == null){
+			ai = 0;
+		}
 		A.push(ai);};
 	return A;
 }
@@ -84,8 +87,3 @@ function oplossenSudoku9() {
 		
 }
 
-
-function clearSudoku() {
-	
-	
-}

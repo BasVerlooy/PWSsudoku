@@ -2,8 +2,9 @@ styles.css
 /* Main body */
 
 	
-body	{
-	background-image: url(/img/Achtergrond.jpg);
+body {
+	background-image: url("http://www.ethernet.nl/wp-content/uploads/2015/03/banner_hageveld.gif");
+	background-repeat: no-repeat;
 }
 
 
